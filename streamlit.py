@@ -1,6 +1,8 @@
 import streamlit as st
 import ldap
 
+pass=st.secrets["ldap"]["pass"]
+
 def search_user(username):
     try:
         l = ldap.initialize("ldap://pitchfork.itc.virginia.edu")
